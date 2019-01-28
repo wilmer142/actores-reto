@@ -1,0 +1,38 @@
+<h1>Crear actor</h1>
+<%= form_for @actor do |f|  %>
+	<div class="">
+		<%= f.text_field :name, placeholder: "Ingresa el nombre" %>
+	</div>
+
+	<div class="">
+		<%= f.text_area :bio, placeholder: "Ingresa la biografia" %>
+	</div>
+
+	<div class="">
+		<%= f.date_field :birth_place, placeholder: "Ingresa la biografia" %>
+	</div>
+
+	<div class="">
+		<%= f.text_field :birth_place, placeholder: "Ingresa el lugar de nacimiento" %>
+	</div>
+
+	<div class="form-group">
+		<%= f.url_field :image_url, placeholder: "Ingresa la url" %>
+	</div>
+
+	<div class="">
+		<%= f.check_box :birth_place %>
+	</div>
+
+	<div class="">
+		<%= f.date_field :death_place, placeholder: "Ingresa la biografia" %>
+	</div>
+
+	<div class="">
+		<%= f.text_field :death_place, placeholder: "Ingresa el lugar de nacimiento" %>
+	</div>
+
+	<div>
+		<%= f.submit "Crear actor"%>
+	</div>
+<% end %>
